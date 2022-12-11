@@ -2,11 +2,32 @@
 <head>
 </head>
 <body>
-   <table border="1">
+   <table border="1" id="tbl1">
      <tr>
 	   <td>4013613024</td>
-	   <td>AmirHosein Haji Hashemi</td>
+	   <td><a href="4013613024.html"> AmirHosein Haji Hashemi</a></td>
      </tr>	 
+     <tr>
+	   <td>00000</td>
+	   <td><a href="http://www.google.com"> Google</a></td>
+	   <td><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="500" height="100"/> </td>
+     </tr>	 
+
    </table>
+   <button id="btn1">Add Students</button>
+   
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+   <script>
+    var students=[
+	{Number:'4013613011',Name:'Ayyobi'},
+	{Number:'4013613036',Name:'Rahbar'},
+	{Number:'4006003001',Name:'Narimani'}
+	];
+      //$('#tbl1').css('background-color','yellow')
+	  $('#btn1').click(function()
+	  {
+	     $('#tbl1').append('<tr><td>dynamic</td></tr>');
+	  });
+   </script>
   </body>
 </html>
