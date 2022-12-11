@@ -7,12 +7,7 @@
 	   <td>4013613024</td>
 	   <td><a href="4013613024.html"> AmirHosein Haji Hashemi</a></td>
      </tr>	 
-     <tr>
-	   <td>00000</td>
-	   <td><a href="http://www.google.com"> Google</a></td>
-	   <td><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="500" height="100"/> </td>
-     </tr>	 
-
+    
    </table>
    <button id="btn1">Add Students</button>
    
@@ -21,12 +16,22 @@
     var students=[
 	{Number:'4013613011',Name:'Ayyobi'},
 	{Number:'4013613036',Name:'Rahbar'},
-	{Number:'4006003001',Name:'Narimani'}
+	{Number:'4006003001',Name:'Narimani'},
+
+	{Number:'4003633039',Name:'KeyrMohammad'},
+	{Number:'4012363091',Name:'Mirmoghtadaei'},
+	{Number:'4013613054',Name:'Assari'},
+
+	{Number:'4013613053',Name:'Zarghami'},
+	{Number:'4013613045',Name:'Sheybani'},
+	{Number:'4002363085',Name:'PoorMeraj'},
+	{Number:'4013613040',Name:'Sarjooghian'}
 	];
       //$('#tbl1').css('background-color','yellow')
 	  $('#btn1').click(function()
 	  {
-	     $('#tbl1').append('<tr><td>dynamic</td></tr>');
+	  for(var i=0;i<students.length;i++)
+	     $('#tbl1').append('<tr><td>'+students[i].Number+'</td><td><a href="'+students[i].Number+'.html">'+students[i].Name+'</a></td></tr>');
 	  });
    </script>
   </body>
